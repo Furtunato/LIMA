@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte geral */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #004aad;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Seção do perfil */
+.perfil {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #004aad;
+  transition: transform 0.3s ease;
+}
+
+.perfil img:hover {
+  transform: scale(1.25);
+}
+
+.descricao {
+  flex: 1;
+}
+
+.descricao p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Hobbies */
+.Hobbies {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Hobbies h2 {
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+.Hobbies p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .descricao {
+    padding: 10px;
+  }
+}
+/* Seção de Tabela */
+.tabela {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabela h3 {
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+/* Tabela de habilidades */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.05rem;
+}
+
+table thead {
+  background-color: #004aad;
+  color: white;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  font-weight: 600;
+}
+
+table td:first-child {
+  font-weight: 600;
+  color: #222;
+}
